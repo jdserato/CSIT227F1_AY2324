@@ -15,4 +15,8 @@ public class Tiger extends Cat{
     public void makeSound() {
         System.out.println("Tiger " + ((Animal)this).name + ": RAAWWWRRR");
     }
+
+    public void eatPerson(String name) {
+        System.out.println(name + "has been eaten");
+    }
 }

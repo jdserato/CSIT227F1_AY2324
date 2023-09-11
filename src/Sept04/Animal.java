@@ -1,6 +1,6 @@
 package Sept04;
 
-public class Animal {
+public abstract class Animal {
     public String name;
     int age;
 
@@ -29,7 +29,5 @@ public class Animal {
         return name + "(" + age + ")";
     }
 
-    public void makeSound() {
-        System.out.println("Animal " + name + ": ???");
-    }
+    public abstract void makeSound();
 }
