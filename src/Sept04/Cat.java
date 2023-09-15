@@ -1,8 +1,9 @@
 package Sept04;
 
 public class Cat extends Animal{
-    public Cat(String name, int age) {
-        super(name, age);
+    float age;
+    public Cat(String name) {
+        super(name);
     }
 
     @Override

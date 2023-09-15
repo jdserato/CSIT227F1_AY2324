@@ -1,14 +1,14 @@
 package Sept04;
 
 public class Tiger extends Cat{
-    String name;
     public Tiger(String name, int age) {
-        super(name, age);
+        super(name);
+        ((Animal) this).age = age;
     }
 
     @Override
     public String toString() {
-        return "Tiger " + super.toString();
+        return "Tiger " + name + super.toString();
     }
 
     @Override

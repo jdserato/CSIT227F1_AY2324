@@ -4,9 +4,13 @@ public abstract class Animal {
     public String name;
     int age;
 
-    protected Animal(String name, int age) {
+    public Animal(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    Animal(String name) {
+        this.name = name;
     }
 
     public String getName() {
@@ -26,7 +30,7 @@ public abstract class Animal {
     }
 
     public String toString() {
-        return name + "(" + age + ")";
+        return name + "(" + age + ")" + super.toString();
     }
 
     public abstract void makeSound();
