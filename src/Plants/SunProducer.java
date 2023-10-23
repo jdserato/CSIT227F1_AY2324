@@ -7,7 +7,10 @@ public interface SunProducer {
 }
 
 interface Attacker {
-    int attack();
+    default int attack() {
+        System.out.println(this + " attacks");
+        return 0;
+    }
     rangeType rangeType();
 }
 

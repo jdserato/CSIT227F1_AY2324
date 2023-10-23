@@ -103,7 +103,7 @@ public abstract class Plant implements Comparable<Plant> {
 
         @Override
         public int attack() {
-            System.out.println(name + " attacks");
+            Attacker.super.attack();
             return 1;
         }
 

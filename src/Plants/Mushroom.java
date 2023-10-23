@@ -1,5 +1,7 @@
 package Plants;
 
+import Sept04.Animal;
+
 public abstract class Mushroom extends Plant{
     boolean state;
     public Mushroom(String name, int sun_cost, boolean state) {
