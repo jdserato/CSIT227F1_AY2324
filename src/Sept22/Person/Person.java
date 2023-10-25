@@ -37,4 +37,15 @@ public class Person {
         }
         System.out.println();
     }
+
+    public void setAge(int age) throws IllegalArgumentException {
+        if (age < 0) {
+            throw new IllegalArgumentException("Age cannot be less than zero");
+        }
+        if (age > 150) {
+            throw new IllegalArgumentException("Age cannot be greater than 150");
+        }
+        setAge(age);
+        this.age = age;
+    }
 }

@@ -5,10 +5,6 @@ public class Rectangle extends Shape{
 
     public Rectangle(double length, double width, String color) {
         super(color);
-        if (length <= 0 || width <= 0) {
-            System.out.println("OY NOT OK");
-//            throw new Exception("OY NOT OK");
-        }
         this.length = length;
         this.width = width;
     }
